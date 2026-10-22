@@ -59,6 +59,8 @@ footer{margin-top:48px;color:var(--mut);font-size:13px;text-align:center}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
 .reveal.on{opacity:1;transform:none}
 </style>
+<meta property="og:image" content="https://numpy-calculator.vercel.app/og.png">
+<meta name="twitter:image" content="https://numpy-calculator.vercel.app/og.png">
 </head>
 <body>
 <div class="wrap">
@@ -89,7 +91,8 @@ Measured in benchmark.py (see repo). Zero Python-level loops.</div></div>
 <a href="https://github.com/HVRGAMING2705/Numpy-Calculator/blob/main/scientific.py">scientific.py</a>
 <a href="https://github.com/HVRGAMING2705/Numpy-Calculator/blob/main/benchmark.py">benchmark.py</a>
 </div>
-<footer>Built by Vikranth Reddy · NumPy Scientific Computing Lab</footer>
+<footer>Built by Vikranth Reddy · NumPy Scientific Computing Lab<span class="fleet-legal" style="display:block;text-align:center;padding:10px 0;font-size:13px"><a href="/legal.html">Privacy · Terms</a></span>
+</footer>
 </div>
 <script>
 function parseMat(){const t=document.getElementById('mat').value.trim().split('\n').map(r=>r.trim().split(/\s+/).map(Number));
@@ -115,5 +118,6 @@ catch(e){el.textContent='Error: '+e}}
 const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
